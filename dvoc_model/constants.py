@@ -9,3 +9,4 @@ ONE_THIRD = 1 / 3
 SQRT_3_OVER_3 = sqrt(3) / 3
 SQRT_3_OVER_2 = sqrt(3) / 2
 ONE_HALF = 1 / 2
+THREE_HALVES = 3 / 2
