@@ -39,8 +39,8 @@ class AlphaBeta:
         return AlphaBeta(alpha, beta, gamma)
 
     def to_dq0(self, sin_cos: SinCos):
-        d = sin_cos.cos_val * self.alpha + sin_cos.sin_val *self.beta
-        q = -sin_cos.sin_val * self.alpha + sin_cos.cos_val *self.beta
+        d = sin_cos.cos_val * self.alpha + sin_cos.sin_val * self.beta
+        q = -sin_cos.sin_val * self.alpha + sin_cos.cos_val * self.beta
         z = self.gamma
         return Dq0(d, q, z)
 
@@ -82,7 +82,7 @@ class Dq0:
         return Abc(a, b, c)
 
     def to_alpha_beta(self, sin_cos: SinCos):
-        alpha = sin_cos.cos_val * self.d - sin_cos.sin_val * self.q 
+        alpha = sin_cos.cos_val * self.d - sin_cos.sin_val * self.q
         beta = sin_cos.sin_val * self.d + sin_cos.cos_val * self.q
         gamma = self.z 
         return AlphaBeta(alpha, beta, gamma)
