@@ -33,8 +33,8 @@ class AlphaBeta:
 
     @classmethod
     def from_polar(cls, v: float, theta: float):
-        alpha = SQRT_2 * v * sin(theta)
-        beta = SQRT_2 * v * cos(theta)
+        alpha = SQRT_2 * v * cos(theta)
+        beta = SQRT_2 * v * sin(theta)
         gamma = 0
         return AlphaBeta(alpha, beta, gamma)
 
